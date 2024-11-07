@@ -28,7 +28,7 @@ function Login() {
     }
 
     try {
-      const response = await axios.post('http://localhost:3000/users/login', data)
+      const response = await axios.post('https://testing-api-production-b5a3.up.railway.app/users/login', data)
       if (response.data) {
         alert('your logged In!')
         localStorage.setItem('secretKey', 'utawl0705200420040507')

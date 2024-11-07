@@ -35,7 +35,7 @@ function Register() {
     }
 
     try {
-      const response = await axios.post(`http://localhost:3000/users/register`, data)
+      const response = await axios.post(`https://testing-api-production-b5a3.up.railway.app/users/register`, data)
       console.log(response.data)
       setName("")
       setPassword("")
